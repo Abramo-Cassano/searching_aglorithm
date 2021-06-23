@@ -170,6 +170,7 @@ def h(matrix, end):
         queue.remove(v)
         for j in range(n):
             if matrix[v][j] != 0:
+                queue.append(matrix[i][j])
                 source[v][j] = i
             else: 
                 source[i][j] = 0
